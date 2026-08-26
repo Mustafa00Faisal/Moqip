@@ -1,0 +1,110 @@
+/* =====================================================================
+   MOAQIB V7 — MOTION & PERFORMANCE FOUNDATION 01
+   GPU-friendly motion only: opacity + transform. Layout-changing animation
+   is deliberately avoided so navigation stays responsive on mobile.
+   ===================================================================== */
+
+body.mq-v7 .mq-view.active{
+  animation:none!important;
+}
+
+body.mq-v7 :where(
+  .mq-case-card,.mq-command-item,.mq-archive-entry,.mq-vault-file,
+  .mq-ledger-account,.mq-directory-card,.mq-governance-entry,.mq-search-result,
+  .mq-day-card,.mq-launch-case
+){
+  content-visibility:auto;
+  contain:layout style paint;
+  contain-intrinsic-size:auto 112px;
+}
+
+body.mq-v7 :where(.mq-nav-palette,.mq-search-shell,.mq-dialog-card,.mq-productivity-sheet,.mq-picker-sheet,.mq-form-sheet){
+  backface-visibility:hidden;
+  transform:translateZ(0);
+}
+
+body.mq-v7 :where(.mq-nav-overlay,.mq-search-overlay,.mq-dialog-overlay,.mq-sheet-overlay,.mq-picker-overlay,.mq-form-overlay).active > *{
+  will-change:transform,opacity;
+}
+
+body.mq-v7 .mq-control-nav button,
+body.mq-v7 .mq-dock-item,
+body.mq-v7 .mq-nav-command{
+  transition-property:transform,background-color,color,border-color,box-shadow;
+  transition-duration:180ms;
+  transition-timing-function:cubic-bezier(.2,.8,.2,1);
+}
+
+body.mq-v7 .mq-control-nav button:active,
+body.mq-v7 .mq-nav-command:active{
+  transform:scale(.985);
+}
+
+@media(hover:hover) and (pointer:fine){
+  body.mq-v7 .mq-nav-command:hover{
+    transform:translate3d(0,-2px,0);
+    border-color:color-mix(in srgb,var(--mq-orange-500) 30%,var(--mq-line));
+    box-shadow:0 12px 28px rgba(32,42,29,.10);
+  }
+}
+
+/* Chrome/Android uses the native View Transition API when available. */
+@supports(view-transition-name:none){
+  body.mq-v7 .mq-view.active{view-transition-name:mq-v7-main-view}
+  ::view-transition-group(mq-v7-main-view){
+    animation-duration:230ms;
+    animation-timing-function:cubic-bezier(.16,1,.3,1);
+  }
+  html[data-mq-nav-direction="forward"]::view-transition-old(mq-v7-main-view){animation:mqV7OldForward 180ms ease both}
+  html[data-mq-nav-direction="forward"]::view-transition-new(mq-v7-main-view){animation:mqV7NewForward 230ms cubic-bezier(.16,1,.3,1) both}
+  html[data-mq-nav-direction="backward"]::view-transition-old(mq-v7-main-view){animation:mqV7OldBackward 180ms ease both}
+  html[data-mq-nav-direction="backward"]::view-transition-new(mq-v7-main-view){animation:mqV7NewBackward 230ms cubic-bezier(.16,1,.3,1) both}
+}
+
+@keyframes mqV7OldForward{to{opacity:0;transform:translate3d(10px,0,0)}}
+@keyframes mqV7NewForward{from{opacity:0;transform:translate3d(-14px,0,0)}}
+@keyframes mqV7OldBackward{to{opacity:0;transform:translate3d(-10px,0,0)}}
+@keyframes mqV7NewBackward{from{opacity:0;transform:translate3d(14px,0,0)}}
+
+/* Backdrop blur is attractive but expensive on many phones. The mobile and
+   adaptive-lite profiles use an opaque tint instead, keeping the same depth. */
+@media(max-width:700px){
+  body.mq-v7 :where(
+    .mq-nav-overlay,.mq-search-overlay,.mq-dialog-overlay,.mq-sheet-overlay,
+    .mq-picker-overlay,.mq-form-overlay,.mq-vault-lightbox
+  ){
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+  body.mq-v7 .mq-dock{
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+    background:rgba(255,253,248,.985);
+  }
+}
+
+html[data-mq-motion="lite"] body.mq-v7 :where(
+  .mq-nav-overlay,.mq-search-overlay,.mq-dialog-overlay,.mq-sheet-overlay,
+  .mq-picker-overlay,.mq-form-overlay,.mq-vault-lightbox,.mq-dock
+){
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+
+html[data-mq-motion="lite"] body.mq-v7 :where(.mq-enter,.mq-view.active){
+  animation-duration:150ms!important;
+}
+
+html[data-mq-motion="none"] body.mq-v7 *,
+html[data-mq-motion="none"] body.mq-v7 *::before,
+html[data-mq-motion="none"] body.mq-v7 *::after{
+  animation:none!important;
+  transition:none!important;
+  scroll-behavior:auto!important;
+}
+
+@media(prefers-reduced-motion:reduce){
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){
+    animation:none!important;
+  }
+}

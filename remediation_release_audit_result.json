@@ -1,0 +1,496 @@
+{
+  "release": "7.0.0-foundation.1",
+  "passed": 78,
+  "failed": 0,
+  "total": 78,
+  "checks": [
+    {
+      "name": "JavaScript syntax: app.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript syntax: productivity.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript syntax: v7-runtime.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript syntax: push-config.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript syntax: service-worker.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript syntax: v7/migration-preview.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unique HTML identifiers",
+      "passed": true,
+      "detail": "duplicates=[]"
+    },
+    {
+      "name": "Referenced local assets exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "Static DOM references resolve",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "Inline event handlers resolve",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "CSS structure: ui-foundation.css",
+      "passed": true,
+      "detail": "brace_depth=0, minimum=0, open_quote=None"
+    },
+    {
+      "name": "CSS structure: productivity.css",
+      "passed": true,
+      "detail": "brace_depth=0, minimum=0, open_quote=None"
+    },
+    {
+      "name": "CSS structure: ui-rebuild.css",
+      "passed": true,
+      "detail": "brace_depth=0, minimum=0, open_quote=None"
+    },
+    {
+      "name": "CSS structure: v7-motion.css",
+      "passed": true,
+      "detail": "brace_depth=0, minimum=0, open_quote=None"
+    },
+    {
+      "name": "Manifest has app identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Manifest starts inside the app",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Manifest icons exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "Service worker has a V7 cache",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Notification navigation is same-origin guarded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Application version is V7 foundation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase client is exactly pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart client is exactly pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Runtime is Web/PWA only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 runtime loads before the business core",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 navigation has deterministic no-gap state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 motion is adaptive and accessible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 mobile overlays avoid expensive blur",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 directory rendering aggregates relationships linearly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 performance snapshot is locally observable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 relational schema contract is explicitly non-live",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V7 migration preview is read-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase-two UI contract: btn-reopen-transaction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase-two UI contract: reversePaymentModal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase-two UI contract: cloudConflictModal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase-two UI contract: trash-list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Phase-two UI contract: audit-list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cloud writes compare the expected revision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cloud conflicts stop silent overwrite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing revision produces a migration gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Critical saves have an audit helper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Transaction deletion is recoverable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reversed payments are excluded from totals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Payment receipts use stable references",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dangerous primitive absent: eval(",
+      "passed": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "Dangerous primitive absent: document.write(",
+      "passed": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "Dangerous primitive absent: localStorage.clear(",
+      "passed": true,
+      "detail": "count=0"
+    },
+    {
+      "name": "Supabase SQL: RLS enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: RLS forced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Anonymous access revoked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Authenticated access explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Snapshot id matches client bigint contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Incompatible legacy types abort",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Legacy global id uniqueness aborts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Owner check uses auth.uid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Update has WITH CHECK",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Optimistic concurrency revision exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Revision cannot be negative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Single snapshot id is enforced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Legacy policies are fully replaced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Named legacy objects are verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Server enforces revision increments",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Supabase SQL: Revision guard covers insert and update",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: analytics_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: control_quick_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: creation_flow_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: entity_forms_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: final_hardening_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: finance_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: records_vault_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: remediation_cloud_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: remediation_phase1_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: remediation_phase2_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: shell_search_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: transaction_renderer_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: v7_foundation_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: v7_migration_preview_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: v7_performance_smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Functional smoke: workspace_renderer_smoke.js",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "smoke_tests": [
+    {
+      "file": "analytics_smoke.js",
+      "passed": true,
+      "output": "ANALYTICS_SMOKE PASS {\"fee\":1000,\"paid\":490,\"remaining\":510,\"completion\":50,\"collection\":49,\"charts\":3}"
+    },
+    {
+      "file": "control_quick_smoke.js",
+      "passed": true,
+      "output": "CONTROL_QUICK_SMOKE PASS {\"directory\":\"new\",\"health\":\"new\",\"quick\":\"launchpad\",\"routes\":\"preserved\"}"
+    },
+    {
+      "file": "creation_flow_smoke.js",
+      "passed": true,
+      "output": "CREATION_FLOW_SMOKE PASS {\"transactions\":1,\"filteredCompany\":\"11\",\"readiness\":\"100%\",\"reset\":\"0%\"}"
+    },
+    {
+      "file": "entity_forms_smoke.js",
+      "passed": true,
+      "output": "ENTITY_FORMS_SMOKE PASS {\"lawyers\":2,\"companies\":1,\"saves\":2}"
+    },
+    {
+      "file": "final_hardening_smoke.js",
+      "passed": true,
+      "output": "FINAL_HARDENING_SMOKE PASS — boot/auth busy + retryable bounded lazy loader"
+    },
+    {
+      "file": "finance_smoke.js",
+      "passed": true,
+      "output": "FINANCE_SMOKE PASS {\"ledgerDue\":610,\"portfolioRemaining\":610,\"collectionRate\":47,\"scope\":\"ledger and portfolio active+stalled+completed\"}"
+    },
+    {
+      "file": "records_vault_smoke.js",
+      "passed": true,
+      "output": "RECORDS_VAULT_SMOKE PASS {\"completed\":2,\"docs\":2,\"search\":1,\"vaultCompany\":\"c1\"}"
+    },
+    {
+      "file": "remediation_cloud_smoke.js",
+      "passed": true,
+      "output": "PASS local quota does not block cloud\nPASS permanent cloud errors do not loop\nPASS missing Auth library keeps data locked\nPASS notification navigation is same-origin\nPASS Supabase security script is complete\nREMEDIATION_CLOUD_SMOKE PASS {\"tests\":5}\nSupabase save error: { code: '42501', status: 403, message: 'permission denied' }"
+    },
+    {
+      "file": "remediation_phase1_smoke.js",
+      "passed": true,
+      "output": "PASS normalizeDb canonicalizes every identifier and completion date\nPASS numeric vault IDs open and delete through string UI arguments\nPASS numeric legacy follow-up IDs toggle\nPASS timeline emits one station event for one action\nPASS completed transactions cannot become stalled\nPASS completion stores completedAt once and does not duplicate\nPASS lawyer deletion cannot leave vault orphans\nPASS quota failure still rerenders and queues cloud sync\nPASS financial receipts are generated from recorded payments only\nREMEDIATION_PHASE1_SMOKE PASS {\"tests\":9}"
+    },
+    {
+      "file": "remediation_phase2_smoke.js",
+      "passed": true,
+      "output": "PASS governance and payment migration is stable and lossless\nPASS audit entry is committed with a save and rolled back with a failed save\nPASS soft deletion and restoration preserve the entire transaction\nPASS completed transaction can reopen once with history and audit intact\nPASS payment reversal excludes value, keeps evidence, and rolls back on save failure\nPASS cloud update uses owner, id, and expected revision as compare-and-swap filters\nPASS initial concurrent insert is converted to a conflict instead of overwrite\nPASS conflict decisions are audited before the selected snapshot is written\nPASS health check detects duplicate entities, payments, and inconsistent reversal evidence\nPASS schema upgrade errors are distinguished from connectivity failures\nPASS UI, dependency, cache, and SQL release contracts are present\nPASS critical mutations route through the append-only operational audit helper\nREMEDIATION_PHASE2_SMOKE PASS {\"tests\":12}"
+    },
+    {
+      "file": "shell_search_smoke.js",
+      "passed": true,
+      "output": "SHELL_SEARCH_SMOKE PASS — auth/more/toast/dialog/search renderer and filters"
+    },
+    {
+      "file": "transaction_renderer_smoke.js",
+      "passed": true,
+      "output": "TRANSACTION_RENDERER_SMOKE PASS"
+    },
+    {
+      "file": "v7_foundation_smoke.js",
+      "passed": true,
+      "output": "V7_FOUNDATION_SMOKE PASS {\"motion\":\"full\",\"navigationSamples\":1,\"panelSamples\":1}"
+    },
+    {
+      "file": "v7_migration_preview_smoke.js",
+      "passed": true,
+      "output": "V7_MIGRATION_PREVIEW_SMOKE PASS {\"valid\":true,\"transactions\":2,\"payments\":2,\"documents\":1,\"auditEvents\":1}"
+    },
+    {
+      "file": "v7_performance_smoke.js",
+      "passed": true,
+      "output": "V7_PERFORMANCE_SMOKE PASS {\"lawyers\":240,\"companies\":720,\"transactions\":6000,\"documents\":1600,\"transactionScans\":1,\"elapsedMs\":16.72}"
+    },
+    {
+      "file": "workspace_renderer_smoke.js",
+      "passed": true,
+      "output": "WORKSPACE_RENDERER_SMOKE PASS"
+    }
+  ],
+  "sha256": {
+    "index.html": "9df2bfc0a6260f69db0b1da04c9d310e9b9d34a7b9c9989fa8528e3b55cf6ddc",
+    "app.js": "507e536317909841887f2caae9eb6c89debedaaa239d9b4260808aad9a381b38",
+    "productivity.js": "07c871f1a063275aa810a213b14b225f46c41e75b6ad974efa85c05b49fe2238",
+    "v7-runtime.js": "ce936a833db9ffc61a2f652ce709debaa4e15505563eb78347eae20a2b5d862a",
+    "push-config.js": "8da118ed1ca99f595b5f579d2dfd206a4b50e1997d21e2612f483343f69ef391",
+    "service-worker.js": "bb58e018561c97f6a13ada4ba5bde5b6efe50994095a69fe8d02215cb170a3ff",
+    "ui-foundation.css": "3307320ad59830299d5bd524ed2e869c89472500c8df4eba05d8a9988aa9b0ed",
+    "productivity.css": "0918655a704a9e5514a843da52cf80acdc8178e0f2cd575ecab0191a50a4da0f",
+    "ui-rebuild.css": "834d749c288e8941c4f01be0dc0bd791be2fd30b5fbe91e623177ce0ed064cb1",
+    "v7-motion.css": "07de42c8cd598188776ac327e33b604c9f5e6a5f7ebe1ddc7cde7d7190c33308",
+    "manifest.webmanifest": "30eb3ebca0e75d7a34cbbcddad9d7b6c173256b2c80d431b06f2b977cdee7458",
+    "SUPABASE_SECURITY_SETUP.sql": "0dfe2a876c823ec07ce5ae6bb76be0477ceafb80d7f43f0b98a1db7989deb128",
+    "v7/schema-contract.json": "d72d4540666e0cbe53210474ea1616a714b2f8f5fab87d164404dbdc3028da0e",
+    "v7/migration-preview.js": "cf247aff72a2c2e7f9df8eb5ac3dddb5cb81aee012ca372d875dedf0262ee3c3"
+  }
+}
